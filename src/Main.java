@@ -71,27 +71,20 @@ public class Main {
         boolean oldMan = age > 60;
         if (baby) {
             System.out.println("Если возраст человека меньше двух лет, то ему пора спать.");
-        } else {
-            if (children) {
+        } else if (children) {
                 System.out.println("Если возраст человека равен " + age + " годам, то ему нужно ходить " +
                         "в детский сад.");
-            } else {
-                if (teenager) {
-                    System.out.println("Если возраст человека равен " + age + " годам, то ему нужно ходить в школу.");
-                } else {
-                    if (youngMan) {
-                        System.out.println("Если возраст человека равен " + age + " годам, то ему нужно ходить в университет.");
-                    } else {
-                        if (adult) {
-                            System.out.println("Если возраст человека равен " + age + " годам, то ему нужно ходить на работу.");
-                        } else {
-                            System.out.println("Если возраст человека равен " + age + " годам, то он может отдохнуть.");
+        } else if (teenager) {
+                System.out.println("Если возраст человека равен " + age + " годам, то ему нужно ходить в школу.");
+        } else if (youngMan) {
+                System.out.println("Если возраст человека равен " + age + " годам, то ему нужно ходить в университет.");
+        } else if (adult) {
+                 System.out.println("Если возраст человека равен " + age + " годам, то ему нужно ходить на работу.");
+        } else {
+                 System.out.println("Если возраст человека равен " + age + " годам, то он может отдохнуть.");
                         }
                     }
-                }
-            }
-        }
-    }
+
 
     public static void task5() {
         System.out.println("Задача 5");
@@ -104,16 +97,15 @@ public class Main {
             System.out.println("Если возраст ребенка равен " + age + " годам, то ребенок не может " +
                     "кататься на аттракционе.");
         }
-        if (children) {
+        else if (children) {
             System.out.println("Если возраст ребенка равен " + age + " годам, то ребенок может кататься на аттракционе только в сопровождении взрослого.");
 
 
         } else {
-            if (teenager) {
                 System.out.println("Если возраст ребенка равен " + age + " годам, то ребенок может кататься на аттракционе без сопровождения взрослого");
             }
         }
-    }
+
 
     public static void task6() {
         System.out.println("Задача 6");
